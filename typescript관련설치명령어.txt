@@ -1,2 +1,5 @@
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+(요건 npm 사용시 문제있는 사람들용)
+
 npm install -g ts-node typescript
 npm install --save-dev ts-node typescript
