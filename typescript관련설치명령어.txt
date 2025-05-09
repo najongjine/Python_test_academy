@@ -4,3 +4,5 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 npm install -g ts-node typescript
 npm i -g ts-node typescript
 npm i -g tsx
+
+pip install
