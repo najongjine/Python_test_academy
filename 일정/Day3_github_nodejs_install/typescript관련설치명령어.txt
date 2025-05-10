@@ -1,0 +1,7 @@
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+(요건 npm 사용시 문제있는 사람들용)
+
+npm i -g ts-node typescript
+npm i -g tsx
+
+tsx ts_test1.ts
