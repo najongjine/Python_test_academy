@@ -1,0 +1,7 @@
+https://wildojisan.tistory.com/
+
+if, elif, else 이론
+try catch 이론
+
+짝수, 홀수 판결하기
+점수를 등급으로 출력하기
