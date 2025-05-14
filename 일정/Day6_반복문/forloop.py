@@ -18,3 +18,18 @@ while dummy < 100:
     dummy+=1
     print(f"while 반복문 이에요 {dummy}")
     None
+
+
+"""
+forloop 안에 또 forloop 이 있을수 있다
+"""
+for i_1 in range(2):
+    print(f"i_1: {i_1}")
+    None
+    for i_2 in range(3):
+        print(f"i_1: {i_1}, i_2:{i_2}")
+        None
+
+"""
+forloop 는 자동화를 구현하는데 1등급으로 중요하다.
+"""
