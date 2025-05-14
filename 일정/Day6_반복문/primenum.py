@@ -46,3 +46,9 @@ if(b_prime):
     print(f"{user_input} 은 소수입니다")
 else:
     print(f"{user_input} 은 소수가 아닙니다")
+
+"""
+솔직히 어려움.
+하지만, 자동화엔 필수.
+forloop 컴퓨터 입장에서 자동화를 하기위해 만들어진 기능
+"""
