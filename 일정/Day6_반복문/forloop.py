@@ -50,7 +50,9 @@ for i_1 in range(2000):
 for i_1 in range(3):
     if i_1 == 2:
         continue
-    print(f"{i_1}")
+    for i_2 in range(2):
+        print(f"i_1:{i_1}, i_2:{i_2}")
+        None
     None
 
 print("프로그램은 계속 실행됨")
