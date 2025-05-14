@@ -6,9 +6,10 @@ b_int = False
 dummy1 이 데이터, input() 기능, int() 변환기능, 반복문
 """
 
+"""
 b_repeat=True
 dummy1=""
-while(b_repeat):
+while(b_repeat): 
     dummy1=input("정수를 입력하세요: ")
     try:
         dummy1=int(dummy1)
@@ -18,3 +19,11 @@ while(b_repeat):
         b_repeat=True
         None
 print(f"입력한 값 : {dummy1}")
+"""
+user_input=""
+while True:
+    try:
+        user_input = int(input("정수를 입력하세요: "))
+        break  # 올바른 정수가 입력되면 루프 종료
+    except:
+        print("유효한 정수가 아닙니다. 다시 입력해주세요.")
