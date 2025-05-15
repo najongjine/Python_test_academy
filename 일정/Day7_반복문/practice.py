@@ -2,6 +2,8 @@
 list dictionary 데이터가 있다.
 {"제품": "뭐뭐1", "가격": "100원"}
 이렇게 데이터 가공해주기.
+for item in list1:
+    item["키워드"] = str(item["키워드"]) + "원"
 """
 list1 = [
     {"제품": "뭐뭐1", "가격": 100},
@@ -15,3 +17,8 @@ list1 = [
     {"제품": "뭐뭐9", "가격": 900},
     {"제품": "뭐뭐10", "가격": 1000}
 ]
+for item in list1:
+    # item이란건 list1 에 담겨져있는 dictionary 구나
+    item["가격"]=str(item["가격"])+"원"
+    None
+print(list1)
