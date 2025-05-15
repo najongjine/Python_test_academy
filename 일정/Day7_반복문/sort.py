@@ -1,6 +1,9 @@
 """
 정렬하기
-리스트에 있는 딕셔네리 데이터를 가격순으로 정렬하기
+리스트에 있는 딕셔네리 데이터를 가격순으로 정렬하기(오름차순)
+for i in range(len(list1)):
+    for j in range(len(list1) - i - 1):
+        if list1[j]["가격"] > list1[j + 1]["가격"]:
 """
 
 list1 = [
