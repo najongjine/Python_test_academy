@@ -46,6 +46,9 @@ class Person:
 
 class PersonChild(Person):
         def __init__(self, name):
+            """
+            부모에 똑같은 이름의 변수가 있으면, 자식은 오버라이딩 함
+            """
             self.name=name
         None
 
