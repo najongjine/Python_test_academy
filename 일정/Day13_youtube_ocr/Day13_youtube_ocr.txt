@@ -16,11 +16,13 @@
 영상을 을 잘개 쪼개고, 오디오도 분리 시킨다.
 ffmeg 가 이 영상 쪼가리들, 오디오를 합쳐준거임
 
+# pip install yt_dlp
 youtube_gui.py
 이게 윈도우 gui 창으로 유튜브 다운로드를 만들어 줌.
 
 gui 창 만드는건 그냥 gpt한테 부탁함
 
+# pip install pyinstaller
 해당 파일이 있는 폴더까지 가서 cmd 창 하나 띄워줌
 pyinstaller --onefile --windowed 내파일이름.py
 이렇게 하면 빌드되고, dist 폴더에 .exe 프로그램 생김
