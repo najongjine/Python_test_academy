@@ -1,0 +1,83 @@
+// 파이썬의 print 라고 생각하면 됨
+
+
+/**
+ * let = 선언했다
+ * number1 변수를
+ * 타입은 number
+ * 값은 1을 대입했다
+ */
+let number1:number = 1
+
+/**
+ * let number1:number = "a"
+ * 여기서는 number1에 빨간줄이 뜬다
+ * Type 'string' is not assignable to type 'number'
+ * 이뜻은 문자열은 숫자형 type에 대입을 못한다는 뜻이다
+ * 타입스크립트는 타입이 같은것만 담을수있다
+ */
+
+class Person {
+    name: string;
+
+    constructor(name: string) {
+    // 클래스 프로퍼티수에 값을 할당
+    this.name = name;
+  }
+}
+/**
+ * person1 이라는 객체를 선언함
+ * 타입은 Person
+ * 값은 undefined, null
+ */
+let person1:Person;
+
+let number2:number;
+
+
+/**
+ * 타입스크립트는 primary 변수들은
+ * number, string, bool
+ * 초기화 값을 넣어주는게 좋음
+ */
+
+// 자바스크립트 오브젝트 라고 불러요
+let jobj1={
+    name:"뭐뭐1"
+    ,price:100
+    ,func1:()=>{
+        console.log("나는 JObj")
+    }
+}
+jobj1.func1()
+
+/**
+ * 타입스크립트는 자바스크립트의 업그레이드판
+ * 자바스크립트는 1등급 함수다
+ * 쉽게 말하면 함수로 시작해서 함수로 끝난다
+ * 함수 - 기능
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
