@@ -3,6 +3,7 @@ from tkinter import messagebox, scrolledtext
 from yt_dlp import YoutubeDL
 import threading
 
+# 입력창 함수
 def download_video():
     url = url_entry.get()
     if not url:
@@ -17,6 +18,7 @@ def download_video():
     # 다운로드를 별도의 스레드에서 실행하여 GUI 응답성을 유지
     threading.Thread(target=run_download, args=(url,), daemon=True).start()
 
+# 실제 다운로드 하는 함수
 def run_download(url):
     def progress_hook(d):
         if d['status'] == 'downloading':
@@ -48,6 +50,7 @@ def run_download(url):
     except Exception as e:
         log_text.after(0, lambda: messagebox.showerror("오류", f"다운로드 중 오류가 발생했습니다:\n{e}"))
 
+# 로그창 함수
 def append_log(message):
     log_text.configure(state='normal')
     log_text.insert(tk.END, message + '\n')
