@@ -1,9 +1,15 @@
-from pytube import YouTube
+# pip install yt_dlp
 
-url = 'https://www.youtube.com/watch?v=kPa7bsKwL-c'
+from yt_dlp import YoutubeDL
 
-yt=YouTube(url)
-strem=yt.streams.get_highest_resolution()
+def download_video(url):
+    ydl_opts = {
+        'format': 'bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[ext=mp4]',
+        'merge_output_format': 'mp4',
+        'outtmpl': '%(title)s.%(ext)s'
+    }
+    with YoutubeDL(ydl_opts) as ydl:
+        ydl.download([url])
 
-strem.download()
-print(f"{yt.title} 영상이 다운로드 되었씁니다")
+url="https://www.youtube.com/watch?v=AF0Lfs6vs_U"
+download_video(url)
