@@ -1,1 +1,4 @@
 https://github.com/najongjine/python_test/tree/main/game
+- 클래스화가 되지 않은 공룡게임 따라쳐보기
+클래스화가 된 공룡 게임 따라쳐보기
+자료구조화의 중요성 체험해보기
