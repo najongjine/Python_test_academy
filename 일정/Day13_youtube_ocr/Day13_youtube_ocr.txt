@@ -1,3 +1,7 @@
+https://github.com/najongjine/python_test
+-ytdl.py, ytdl_gui.py, 유튜브 크롤링 .exe 프로그램 빌드.
+OCR/ocr1.py  사용체험
+
 모듈들도 종류가 많은데
 
 옛날에 만들고, 시대가 바뀌면서 호환이 놈들이 많음
