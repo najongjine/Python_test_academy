@@ -1,0 +1,7 @@
+프로그램 설치.
+
+POSTMAN - 서버 쉽게 테스트
+
+postgres 설치 - DB 엔진
+
+heidissql - DB 쉽게 조작할수 있는놈
