@@ -49,3 +49,15 @@ function getRandomIntInclusive(min: number, max: number): number {
   const maxFloored = Math.floor(max);
   return Math.floor(Math.random() * (maxFloored - minCeiled + 1)) + minCeiled;
 }
+
+
+
+let list1 = [
+  { 제품: "뭐뭐1", 가격: 1110 },
+  { 제품: "뭐뭐2", 가격: 20 },
+  { 제품: "뭐뭐3", 가격: 3005 },
+  { 제품: "뭐뭐4", 가격: 400 },
+  { 제품: "뭐뭐5", 가격: 5050 },
+];
+
+list1.sort((a, b) => a.가격 - b.가격);
