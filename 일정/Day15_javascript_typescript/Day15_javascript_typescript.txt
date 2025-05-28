@@ -1,7 +1,25 @@
-프로그램 설치.
+API END point
 
-POSTMAN - 서버 쉽게 테스트
+app.get("/", == http://localhost:3000
 
-postgres 설치 - DB 엔진
+app.get("/sort", == http://localhost:3000/sort
 
-heidissql - DB 쉽게 조작할수 있는놈
+우리는 /dfdfdfdsqwea 이런 엔드포인트를 만든적이 없어요
+만약 클라이언트가 http://localhost:3000/dfdfdfdsqwea
+이런 주소로 요청을 보내면, 404 에러가 뜸.
+이뜻은 이런 주소는 없다라는 뜻
+
+HTTP method:
+GET - 인터넷 주소창으로 요청 가능
+POST - 인터넷 주소로는 접근 불가능
+
+PUT - 인터넷 주소로는 접근 불가능
+DELETE - 인터넷 주소로는 접근 불가능
+
+
+파이썬과 타입스크립트 비교
+파이썬: let 없음. scope 없음. { } 없음
+타입스크립트는 : let 로 선언부터 하고 시작. scope 있음. 들여쓰기가 아니라 {}
+         변수 : 타입 
+자바스크립트 특징 : 1등급 함수(=> 요 표시 나온거. 리엑트에서 활약함)
+, 막담을수 있음

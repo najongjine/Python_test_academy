@@ -11,11 +11,12 @@
  * 서버도 그냥 받아버림
  * 이게 진짜 최강임
  */
-
+// number1=1 파이썬 스타일
 let number = 1.121;
 let string1 = "dfdfd";
 let bBool = true;
 let jObj = {};
+// a["뭐뭐"]     
 jObj.a = "a";
 jObj.func1 = () => {
   console.log("나는 func1");

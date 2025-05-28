@@ -11,3 +11,38 @@ if (number1 % 2 == 0) {
 } else {
   let result = "홀수입니다";
 }
+
+/**
+ *  primitive : 숫자, 문자, bool 이런건 타입이 자동으로 정해짐
+ *  나머지는 내가 정해주면됨
+ *  근데 타입 정해주기 귀찬으면 any 씀
+ */
+
+export interface KakaoPlace {
+  id: string;
+  place_name: string;
+  address_name: string;
+  road_address_name: string;
+  phone: string;
+  category_name: string;
+  category_group_code: string;
+  category_group_name: string;
+  x: string; // 경도 (longitude)
+  y: string; // 위도 (latitude)
+  distance?: string; // 선택적 필드: 거리 (미터 단위)
+  place_url: string;
+}
+
+// 검색 메타데이터
+export interface KakaoSearchMeta {
+  total_count: number;
+  pageable_count: number;
+  is_end: boolean;
+  same_name: {
+    keyword: string;
+    region: string[];
+    selected_region: string;
+  };
+}
+
+let anyting: KakaoSearchMeta;
