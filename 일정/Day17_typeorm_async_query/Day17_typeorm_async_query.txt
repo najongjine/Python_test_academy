@@ -76,3 +76,19 @@ pg - postgres DB 엔진. 이것만 달랑 설치해서 진짜 서비스 돌리�
   어려운 말을 좀 쓰면 connection pool 관리가 안됨
 typeorm - connection pool 관리를 자동으로 해줌. 사용자가 1000명이든 1억명이든 상관없음.
   + 데이터 조회, 수정, 삭제 에 관한것도 다 제공해줌
+
+
+비동기 - 
+  // 빠른코드
+  const dummy1Repo = AppDataSource.getRepository(TDummy1);
+
+  // 빠른코드
+  let data: any;
+  // 느린코드
+  data = dummy1Repo.find();
+  //빠른코드
+  let dummy2 = 1 + 1;
+  //빠른코드
+  return c.json({ data, dummy2 });
+느린코드는 코라인 1번에 위치하건, 맨 마지막에 위치하건, 무조건 맨 나중에 실행
+
