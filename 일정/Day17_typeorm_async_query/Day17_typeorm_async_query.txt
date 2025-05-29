@@ -27,3 +27,17 @@ typeorm-model-generator -h localhost -d test1 -u postgres
 -o 다음이 코드 만드는 경로
 
 .env 는 DB접속정보 적는곳
+
+package.json - nodejs 에서 핵심인 부분.
+  담당하는건 실행방식, 모듈관리
+
+"scripts": {
+  "clean": "rimraf dist",
+  "dev": "cross-env NODE_ENV=development tsx watch src/index.ts",
+  "build": "npm run clean && tsc",
+  "start": "npm run build && cross-env NODE_ENV=production node dist/index.js"
+},
+
+이론만 설명 하자면, 개발모드와 운영모드 실행방식을 나눔
+scripts 여기를 뜯어 고치면 실행방식을 내맘대로 조정가능. 근데 이거 뜯어 고치는거 공부하지는 않음
+그냥 GPT 한테 해달라함
