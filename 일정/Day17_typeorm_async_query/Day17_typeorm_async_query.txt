@@ -41,3 +41,38 @@ package.json - nodejs 에서 핵심인 부분.
 이론만 설명 하자면, 개발모드와 운영모드 실행방식을 나눔
 scripts 여기를 뜯어 고치면 실행방식을 내맘대로 조정가능. 근데 이거 뜯어 고치는거 공부하지는 않음
 그냥 GPT 한테 해달라함
+프로젝트 만들때마다 다 뜯어고치냐? 아님. 그냥 복붙하고 추가하고 끝
+
+
+
+typeorm db 접속 정리 -
+1. 필요한 모듈들 npm i 로 설치
+2. tsconfig.json 수정. {
+   "target": "ES2020",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+}
+
+3. .env.development, .env.production 파일 로트에 생성
+
+4. DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=hono_user
+DB_PASSWORD=password123
+DB_NAME=hono_db
+이거 .env에 내용 적어주기
+
+5. data-source1.ts 파일 만들고 안에 코드 복붙으로 적어주기
+
+6. typeorm model generator 돌려주기
+
+7. src/index.ts 파일에 코드 추가
+
+
+typeorm, pg
+pg - postgres DB 엔진. 이것만 달랑 설치해서 진짜 서비스 돌리면 에러가 많이 생김
+  어려운 말을 좀 쓰면 connection pool 관리가 안됨
+typeorm - connection pool 관리를 자동으로 해줌. 사용자가 1000명이든 1억명이든 상관없음.
+  + 데이터 조회, 수정, 삭제 에 관한것도 다 제공해줌
