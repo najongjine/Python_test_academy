@@ -1,4 +1,9 @@
 https://wildojisan.tistory.com/48
+- router 분리하기
+
+postman을 이용하여 분리된 라우터에서 get, post 해보기
+
+
 
 postman 에서
 post method -> raw 에서
