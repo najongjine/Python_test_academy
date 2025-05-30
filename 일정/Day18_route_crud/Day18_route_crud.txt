@@ -1,0 +1,8 @@
+https://wildojisan.tistory.com/48
+
+postman 에서
+post method -> raw 에서
+{
+    "name":"aaa"
+}
+이 뜻은 json 데이터를 보낸거임
