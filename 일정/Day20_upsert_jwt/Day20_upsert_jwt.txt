@@ -22,3 +22,6 @@ session 방식은 서버에서 html을 제공할때 자주 쓰입니다.
 그래서 요즘엔 토큰 로그인 방식을 씁니다.
 토큰 방식을 쉽게 얘기하면 신분증 같은거.
 클라이언트가 서버에 요청할때, 토큰(신분증을 같이 보내요)
+
+npm install hono jsonwebtoken bcrypt
+npm install -D typescript ts-node @types/node @types/jsonwebtoken @types/bcrypt
