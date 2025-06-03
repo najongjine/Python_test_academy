@@ -1,0 +1,7 @@
+https://wildojisan.tistory.com/49
+- jwt
+
+insert 와 update 을 합치는 API Endpoint 실무 예제
+
+session 로그인과 토큰 로그인 개념설명.
+jwt 토큰구현, 암호화 구현
