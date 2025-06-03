@@ -48,3 +48,7 @@ CREATE TABLE t_user_roles (
         REFERENCES t_user (idp)
         ON DELETE CASCADE
 );
+
+
+
+typeorm-model-generator -h localhost -d test1 -u postgres -x aaaa -e postgres -o ./src
