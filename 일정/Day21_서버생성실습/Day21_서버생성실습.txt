@@ -1,0 +1,11 @@
+npm create hono@latest my-app
+
+npm : 의 뜻은 nodejs 특수 기능들을 사용하겠다라는 명령어
+
+create : 생성이라는 뜻. npm 에 내장되있는 명령어
+
+hono : hono 서버를 뜻함. 서버에는 여러 종류가 많습니다. 그중에서 hono를 생성하라고 지정해준것.
+
+@latest : 최신버전
+
+my-app : 내가 정하는 이름
