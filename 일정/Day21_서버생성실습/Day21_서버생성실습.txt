@@ -15,3 +15,10 @@ hono_test1 이라는 hono 서버를 새로 만들려면 어떻게 해야할까?
 * 서버안에 서버 있으면 버그남
 * 서버 생성 명령어는 깨끗한 폴더에서, 흑백 cmd 화면에서 해야함
 npm create hono@latest hono_test1
+
+
+nodejs 생태계에선 서버든, 프론트든, 프로젝트 생성후엔 npm i 명령어를 한번 돌려준다.
+주의할점은, 꼭 해당 프로젝트를 vscode 로 열고나서 해야한다.
+
+package.json 에는 dependencies, devDependencies 라는 항목이 있다.
+npm i 를 실행하면, 필요한 모듈들을 싹 다운로드 해서 node_modules 폴더에 자동으로 모아 놓는다
