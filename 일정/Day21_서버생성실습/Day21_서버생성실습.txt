@@ -9,3 +9,9 @@ hono : hono 서버를 뜻함. 서버에는 여러 종류가 많습니다. 그중
 @latest : 최신버전
 
 my-app : 내가 정하는 이름
+
+
+hono_test1 이라는 hono 서버를 새로 만들려면 어떻게 해야할까?
+* 서버안에 서버 있으면 버그남
+* 서버 생성 명령어는 깨끗한 폴더에서, 흑백 cmd 화면에서 해야함
+npm create hono@latest hono_test1
