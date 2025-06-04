@@ -76,3 +76,20 @@ GPT 가 요게 콜백 함수라고 함:
 
 내 생각엔 콜백함수 이름을 잘못정함...
 콜백함수 뜻은 시스템이 필요할때 "요 함수 갔다 써"
+
+
+
+npm run dev 를 하면 index.ts 에 있는 코드 싹 실행됨
+그리고 postman에서 localhost:3000 으로 요청 보냈더니
+app.get("/", (c) => {
+  return c.text("Hello Hono!");
+});
+요게 실행됨.
+파이썬에서 했던 코드 작동방식이랑 틀려서 혼동올수있음.
+
+요청 보냈더니 특정 코드가 실행된건, http endpoint 의 특성임
+즉, app.get("/", (c) => {
+  return c.text("Hello Hono!");
+});
+이 코드가 특별한 코드임
+컴퓨터가 특정 api endpoint 로 요청이 오면, 해당 endpoint 정의도니 함수만 실행됨
