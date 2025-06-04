@@ -31,3 +31,48 @@ GPT 가 알려줌. 아니면 모듈 공식 홈페이지에 설명서 나와있�
 
 실제 실무자들이 프로그래밍을 해독할땐, 모든 단어 다 외우고 하는게 아님.
 작은거에서 큰걸로 가는 영문 스타일을 떠올리면서, 변수이름, 함수이름, 이런걸 보고 의도를 느끼는거임
+
+
+// serve 라는 객체든, 함수든 뭐 요렇게 된놈을 가져와라
+// @hono/node-server 라는 모듈 덩어리에서
+import { serve } from "@hono/node-server";
+import { Hono } from "hono";
+
+// app 이라는 객체를 만들어라. Hono 라는 클래스를 통해서
+// 클래스란건 어떻게 알음?? new 키워드 보고 눈치챔
+const app = new Hono();
+
+// get은 영어의 뜻에선 가져오다. 근데, 이게 http 이론에서도 등장
+// endpoint도 있다 "/"
+// 또 테스트도 해보고, "아... 이게 api endpoint구나" 이렇게 아는것
+app.get("/", (c) => {
+  return c.text("Hello Hono!");
+});
+
+/** 이건 코드가 드럽게 어렵게 생김
+ * port:3000, console.log(`Server is running on http://localhost:${info.port}`);
+ * 이걸 보고, 서버 돌리는 코드구나 하고 알게됨
+ * 봐도 정 모르겠으면, gpt 한테 물어봄
+ *
+ * (info) => { 요건 콜백 함수인데, 지금 이 코드에서 뜻은
+ * serve 함수 실행하고나면 (info) => { 요 함수를 갔다 써라. 니가 쓰고싶을때
+ * 맘대로
+ */
+serve(
+  {
+    fetch: app.fetch,
+    port: 3000,
+  },
+  (info) => {
+    console.log(`Server is running on http://localhost:${info.port}`);
+  }
+);
+
+
+GPT 가 요게 콜백 함수라고 함:
+(info) => {
+    console.log(`Server is running on http://localhost:${info.port}`);
+  }
+
+내 생각엔 콜백함수 이름을 잘못정함...
+콜백함수 뜻은 시스템이 필요할때 "요 함수 갔다 써"
