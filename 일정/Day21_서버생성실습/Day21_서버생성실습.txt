@@ -22,3 +22,8 @@ nodejs 생태계에선 서버든, 프론트든, 프로젝트 생성후엔 npm i 
 
 package.json 에는 dependencies, devDependencies 라는 항목이 있다.
 npm i 를 실행하면, 필요한 모듈들을 싹 다운로드 해서 node_modules 폴더에 자동으로 모아 놓는다
+
+tsconfig.json : 타입스크립트 작동 방식 설정파일. 이거를 변경해야 할때는, db 모듈 설치하고나서 변경 필요.
+이걸 어떻게 변경하냐???
+GPT 가 알려줌. 아니면 모듈 공식 홈페이지에 설명서 나와있음.
+즉, DB 모듈 설치하고나면 건들일이 없냐? 네. 건들일이 없어요
