@@ -1,0 +1,10 @@
+http 통신에서,
+
+3가지 루트로 데이터를 실을수 있다
+1. header - 주로 토큰(명함)같은 개인정보 같은것을 실는다
+postman 에서 Header 탭
+
+2. query -  dfdfd.com?query1=xxx&query2=bbb
+주소창 뒤쪽에 데이터를 실는다. 주로 게시글의 id, 메뉴판의 id
+
+3. body - 다 실을수 있다. 주로 파일, 그외 여러가지 정보

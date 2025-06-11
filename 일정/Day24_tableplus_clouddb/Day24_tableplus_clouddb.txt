@@ -1,5 +1,6 @@
-DB 설치 다시하기
+table plus 설치후, vercel neon db 에 접속
 
-body 로 데이터 받기,
+저장하기 실습
 
-formdata 로 데이터 받은후 file은 base64로 변환해서 클라이언트에게 되돌려주기
+회원가입 실습
+
