@@ -7,3 +7,7 @@ https://wildojisan.tistory.com/48
 react 의 화면바인딩 변수,
 그냥 typescript 변수 복습
 둘의 특징 비교. 그냥 typescript 변수는 아무리 값을 바꾸어도 화면에 자동으로 갱신되지 않는다.
+
+
+https://wildojisan.tistory.com/27
+- 공통 헤더 푸터 만들기
