@@ -1,9 +1,21 @@
 회원가입, 로그인, 정보보기 복습
 
-리엑트 프로젝트 생성, 실행
+
+https://wildojisan.tistory.com/26
+- 리엑트 프로젝트 생성, 실행
 
 리엑트를 왜 쓰는지 설명
 
 input 이랑 화면 바인딩
 
 time 화면에 표시
+
+화면 바인딩 변수는 
+const [text, setText] = useState<string>("쓰레기값");
+이런식으로 선언
+값을 셋팅 해줄때도 특별하게 
+setText(e?.target?.value ?? "");
+이런 set 함수를 써줘야함
+
+<div>화면 바인딩 :{time}</div>
+html 태그 에서는 {} 특수문자로 바인딩
