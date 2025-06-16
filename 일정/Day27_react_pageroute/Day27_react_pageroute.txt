@@ -1,6 +1,9 @@
 https://wildojisan.tistory.com/30
 - 리엑트 페이지 이동
 
+https://wildojisan.tistory.com/53
+- tailwind 설치, 적용 테스트
+
 npm react create 만들었던건
 맨 처음엔, App.tsx 하나뿐이었음.
 App.tsx 하나일때는, html 파일 하나에 다 작성하는 스타일 이었음
