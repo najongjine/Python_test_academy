@@ -1,0 +1,17 @@
+https://wildojisan.tistory.com/30
+- 리엑트 페이지 이동
+
+npm react create 만들었던건
+맨 처음엔, App.tsx 하나뿐이었음.
+App.tsx 하나일때는, html 파일 하나에 다 작성하는 스타일 이었음
+
+이번엔 react-router-dom 이란걸 설치하고,
+리엑트 구조를 뜯어 고쳤음
+-코드 난이도는 올라감
+-하지만, 이제 만들고 싶은거 만드는거 난이도는 확 내려감
+
+<a href="/my-page2">
+html 에서 이렇게 페이지 이동을 하고싶으면, 경로에 똑같은 파일이
+있어야했고, 서버로 배포했을시, 에러도 많이남
+
+하지만, react-router-dom 을 쓰면, 페이지 이동이 오류없이 잘됨
