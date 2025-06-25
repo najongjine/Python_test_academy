@@ -78,3 +78,23 @@ const content = editorRef.current?.getInstance().getHTML() ?? "";
           },
         }}
       />
+
+
+글 삭제(데이터 삭제) -
+1. 리엑트에서 삭제 요청을 보냄
+O 2 서버에서 pk로 데이터 찾음 
+skip 3 첨부한 이미지 파일들을 파일 서버에서 지움
+O 4 DB 데이터 삭제
+5 최종 결과 리엑트에 응답
+6 리엑트는 응답결과 받고, list 페이지나 메인 페이지로 이동
+
+hono 서버에
+memo.ts
+body에서 idp를 꺼내세요
+idp 로 repository 를 이용해서 memo 데이터 찾기
+
+memo react 에서
+TodoList.tsx
+* <button>delete</button> 여기에 걸려있는 onClick 함수가 idp나 memo
+데이터를 매개변수로 받아야됨
+* handleDelte 함수는 서버에 axios 요청으로 삭제 api에 요청 보내야함
