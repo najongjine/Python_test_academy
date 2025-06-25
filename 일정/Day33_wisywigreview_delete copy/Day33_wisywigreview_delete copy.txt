@@ -1,2 +1,40 @@
-npm install @toast-ui/react-editor --legacy-peer-deps
+imgbb 라는 사이트에서 API key를 받았어요
 
+API -
+요청을 보내도, 결과를 받는 주소를 말해요.
+대부분 HTTP 요청을 통해서 해요.
+왜냐면 이게 쉬우니깐. GPT도 이거 잘해요.
+GPT한테 method post, url 어쩌구저쩌구, 보내는데이터 이거이거
+
+그냥 API를 제공하는 사이트 주소 GPT한테 던져줘도 얘가 잘 짜줘요
+
+Key
+이게 제일 중요해요.
+API를 제공하는 회사는 사용자 관리를 해야되요.
+안그러면 걔네도 ddos 공격 받아요.
+걔네가 key를 발급 해주면, 뭐 사용량, 가격 그런것들이 책정이 되요
+imgbb 같은 경우는 현재까지, 딱히 돈을 받고있지 않아요
+
+진짜 서비스 운영할땐 파일서버를 마련 해야되요.
+지금 가장 싼 파일 서버는 cloud flare에 R2 라는 놈이에요.
+이건 카드등록 필수에요.
+
+
+
+리엑트에서
+npm install @toast-ui/react-editor --legacy-peer-deps
+설치했어요
+티스토리 같은 게시글을 멋지게 작성하게 해주는 모듈이에요
+
+App.tsx 에서
+import "@toast-ui/editor/dist/toastui-editor.css";
+이걸로 toast-ui 의 에디터 ui를 가져오고
+MemoEditorV3.tsx 에서
+import { Editor } from "@toast-ui/react-editor";
+에디터 모듈을 가져와서
+
+리엑트의 html 뿌리는곳 return( 여기 안쪽 ) 에
+<Editor /> 태그를 이용해서 wisywig 에디터를 보여줘요.
+그리고 작성한 내용을 서버로 보내주면 되는데,
+const content = editorRef.current?.getInstance().getHTML() ?? "";
+요런 코드로 에디터에 있는 내용을 뽑아서 서버로 전송해요
