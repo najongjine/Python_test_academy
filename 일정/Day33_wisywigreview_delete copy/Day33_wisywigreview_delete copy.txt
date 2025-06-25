@@ -38,3 +38,43 @@ import { Editor } from "@toast-ui/react-editor";
 그리고 작성한 내용을 서버로 보내주면 되는데,
 const content = editorRef.current?.getInstance().getHTML() ?? "";
 요런 코드로 에디터에 있는 내용을 뽑아서 서버로 전송해요
+
+
+<Editor
+// 에디터에 쓴 내용을 editorRef 여기 변수랑 맵핑 시키고
+        ref={editorRef}
+        height="400px"
+        initialEditType="wysiwyg"
+        previewStyle="vertical"
+        useCommandShortcut={true}
+// 이미지 첨부를 하면 addImageBlobHook 이라는 이벤트가 발생함
+// 그러면 우리가 써준 코드가 발동함
+        hooks={{
+          addImageBlobHook: async (blob, callback) => {
+            try {
+            // 첨부한 이미지
+              const formData = new FormData();
+              formData.append("image", blob);
+
+              const apiKey = ""; // ✅ 여기에 발급받은 API 키 입력
+              // imgbb 에 이미지 업로드 부탁함
+              const res = await axios.post(
+                `https://api.imgbb.com/1/upload?key=${apiKey}`,
+                formData
+              );
+                // imgbb 는 url만 딱 줌
+              const imageUrl = res?.data?.data?.url;
+              if (imageUrl) {
+                // 이걸 callback 함수한테 주면 지가 알아서 이미지 표시함
+                callback(imageUrl, "이미지");
+              } else {
+                alert("이미지 URL을 가져올 수 없습니다.");
+              }
+            } catch (err: any) {
+              console.error("이미지 업로드 실패:", err);
+              alert(`이미지 업로드 실패: ${err?.message ?? ""}`);
+            }
+            return false; // 기본 업로드 방지
+          },
+        }}
+      />
