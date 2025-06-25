@@ -1,2 +1,10 @@
 npm install @toast-ui/react-editor --legacy-peer-deps
 
+https://github.com/najongjine/Hono_memo_academy/tree/cf87c6d253c95daf7bba9d6970079eff18cab335
+- DB연결, CRUD 기능있는 api 서버
+
+https://github.com/najongjine/my_memo_academy/tree/4af0bca0712c0c25d4dd163cc02e963f46929711
+- React typescript 에서 toast-ui wisywig 추가.
+- imgbb api 를 이용해 이미지 업로드 기능 추가
+- list 페이지에서 제목 클릭시 상세보기 기능 추가
+
