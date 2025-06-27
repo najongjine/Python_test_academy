@@ -1,0 +1,19 @@
+저희가 만든 메모앱은, 실제 사용으로 봤을땐,
+수준이 어느정돈가요?
+
+예외처리, 잔버그, 이거 빼면
+6/10
+
+로그인이 페이지에서는 입력하는게 별거 없어도 로직과 후처리가 복잡해요
+
+왜냐면 보안과 검증까지 들어 가거든요
+
+
+https://github.com/najongjine/my_memo_academy/tree/304111d3682a2c8dfb12806d40f87e49441e4b09
+- 리엑트 로그인, 회원가입 페이지 구축
+- 회원가입 로직, 로그인 엔터기능 도입
+- 로그인 상태 헤더 상단우측에 표시
+
+https://github.com/najongjine/Hono_memo_academy/tree/5bb30b5b5a42ce953b0ad1134110aa6d2c005681
+- router.post("/validate", async (c) => {  구축
+
