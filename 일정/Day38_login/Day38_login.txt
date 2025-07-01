@@ -1,0 +1,53 @@
+내가 쓴 메모만 가져오고
+
+메모 작성시 나의 user id 기록하기
+
+vercel에 업로드
+
+
+Vercel 클라우드
+
+클라우드 종류가 많음-
+AWS, Azure, Navercloud, NHN cloud...
+
+요즘은 GPU 호스팅 서버가 유행해요
+왜냐면 GPU 호스팅 업체가 엔비디아 GPU를 장착해서 대여해 주기 때문이에요
+
+클라우드든, 호스팅이든 사용법은 비슷
+컴퓨터가 딴데있음
+내가 원격접속을 함
+
+
+Vercel 은 많이 특이해요
+무료인 데신 제약사항이 많아요
+1. AI 모델같이 용량이 나가는건 업로드 안됨
+2. 원격접속 안됨
+3. 파일서버 자체 구축 안됨
+
+Vercel은 리엑트, 간단한 서버  즉 게시판 쇼핑몰 포트폴리오 올리는 정도
+
+그래서 제일중요한 AI 붙여서 할수있냐... 이거 솔직히 구임
+
+
+AI streamlit
+페이지 딱 하나 나옴
+버튼하나 나옴
+그걸로 그냥 예측결과 보여주기
+
+
+진짜 거대한 프로젝트를 구동하고 싶으면 어떻게 하냐???
+gpu 서버 사야됨...
+
+pip install dlib
+
+pip install torch
+
+pip install opencv
+
+pip install xboost
+
+pip install faiss
+
+얘네들은 gpu 버전으로 따로 조사해서 설치법 알아야함
+
+
