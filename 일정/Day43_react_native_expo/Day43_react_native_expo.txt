@@ -1,0 +1,30 @@
+app/_layout.tsx -
+진입점, 기본골격
+
+app/(tabs)/_layout.tsx -
+페이지 등록
+
+
+태그-
+<div> -{
+    <ScrollView>
+    <FlatList>
+    <View>
+    <Text>
+}
+<a> - {
+    <Linking>
+}
+<br/> - {
+    <Text>
+}
+
+<input>
+<textarea>
+<img>
+
+
+<ScrollView>
+    <Text></Text>
+    <Text></Text>
+</ScrollView>
