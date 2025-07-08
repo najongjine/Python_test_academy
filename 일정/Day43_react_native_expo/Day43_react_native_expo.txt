@@ -1,0 +1,45 @@
+app/_layout.tsx -
+진입점, 기본골격
+
+app/(tabs)/_layout.tsx -
+페이지 등록
+
+
+태그-
+<div> -{
+    <ScrollView>
+    <FlatList>
+    <View>
+    <Text>
+}
+<a> - {
+    <Linking>
+}
+<br/> - {
+    <Text>
+}
+
+<input>
+<textarea>
+<img>
+
+
+<ScrollView>
+    <Text></Text>
+    <Text></Text>
+</ScrollView>
+
+앱은 웹에 비해서 굉장히 어려워요
+그래서 별거 아닌것도 문법이나 규칙이 굉장히 까다로워요
+그래서 요즘 앱 개발이 별로 인기가 없어요
+
+<ScrollView
+      style={styles.container}
+      contentContainerStyle={styles.contentContainer}
+    >
+ScrollView 같은 경우는
+contentContainerStyle 이라는 css를 반드시 먹여줘야 된데요
+
+
+https://github.com/najongjine/ReactNativeExpo_test1_academy/tree/3fdca40c4bd92049a3d700d6be2ae8ee9754981f
+- MyMemo 서버 연동없이 간단하게 구현

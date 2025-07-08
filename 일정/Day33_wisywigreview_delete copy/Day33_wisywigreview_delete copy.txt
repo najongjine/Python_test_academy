@@ -1,0 +1,100 @@
+imgbb 라는 사이트에서 API key를 받았어요
+
+API -
+요청을 보내도, 결과를 받는 주소를 말해요.
+대부분 HTTP 요청을 통해서 해요.
+왜냐면 이게 쉬우니깐. GPT도 이거 잘해요.
+GPT한테 method post, url 어쩌구저쩌구, 보내는데이터 이거이거
+
+그냥 API를 제공하는 사이트 주소 GPT한테 던져줘도 얘가 잘 짜줘요
+
+Key
+이게 제일 중요해요.
+API를 제공하는 회사는 사용자 관리를 해야되요.
+안그러면 걔네도 ddos 공격 받아요.
+걔네가 key를 발급 해주면, 뭐 사용량, 가격 그런것들이 책정이 되요
+imgbb 같은 경우는 현재까지, 딱히 돈을 받고있지 않아요
+
+진짜 서비스 운영할땐 파일서버를 마련 해야되요.
+지금 가장 싼 파일 서버는 cloud flare에 R2 라는 놈이에요.
+이건 카드등록 필수에요.
+
+
+
+리엑트에서
+npm install @toast-ui/react-editor --legacy-peer-deps
+설치했어요
+티스토리 같은 게시글을 멋지게 작성하게 해주는 모듈이에요
+
+App.tsx 에서
+import "@toast-ui/editor/dist/toastui-editor.css";
+이걸로 toast-ui 의 에디터 ui를 가져오고
+MemoEditorV3.tsx 에서
+import { Editor } from "@toast-ui/react-editor";
+에디터 모듈을 가져와서
+
+리엑트의 html 뿌리는곳 return( 여기 안쪽 ) 에
+<Editor /> 태그를 이용해서 wisywig 에디터를 보여줘요.
+그리고 작성한 내용을 서버로 보내주면 되는데,
+const content = editorRef.current?.getInstance().getHTML() ?? "";
+요런 코드로 에디터에 있는 내용을 뽑아서 서버로 전송해요
+
+
+<Editor
+// 에디터에 쓴 내용을 editorRef 여기 변수랑 맵핑 시키고
+        ref={editorRef}
+        height="400px"
+        initialEditType="wysiwyg"
+        previewStyle="vertical"
+        useCommandShortcut={true}
+// 이미지 첨부를 하면 addImageBlobHook 이라는 이벤트가 발생함
+// 그러면 우리가 써준 코드가 발동함
+        hooks={{
+          addImageBlobHook: async (blob, callback) => {
+            try {
+            // 첨부한 이미지
+              const formData = new FormData();
+              formData.append("image", blob);
+
+              const apiKey = ""; // ✅ 여기에 발급받은 API 키 입력
+              // imgbb 에 이미지 업로드 부탁함
+              const res = await axios.post(
+                `https://api.imgbb.com/1/upload?key=${apiKey}`,
+                formData
+              );
+                // imgbb 는 url만 딱 줌
+              const imageUrl = res?.data?.data?.url;
+              if (imageUrl) {
+                // 이걸 callback 함수한테 주면 지가 알아서 이미지 표시함
+                callback(imageUrl, "이미지");
+              } else {
+                alert("이미지 URL을 가져올 수 없습니다.");
+              }
+            } catch (err: any) {
+              console.error("이미지 업로드 실패:", err);
+              alert(`이미지 업로드 실패: ${err?.message ?? ""}`);
+            }
+            return false; // 기본 업로드 방지
+          },
+        }}
+      />
+
+
+글 삭제(데이터 삭제) -
+1. 리엑트에서 삭제 요청을 보냄
+O 2 서버에서 pk로 데이터 찾음 
+skip 3 첨부한 이미지 파일들을 파일 서버에서 지움
+O 4 DB 데이터 삭제
+5 최종 결과 리엑트에 응답
+6 리엑트는 응답결과 받고, list 페이지나 메인 페이지로 이동
+
+hono 서버에
+memo.ts
+body에서 idp를 꺼내세요
+idp 로 repository 를 이용해서 memo 데이터 찾기
+
+memo react 에서
+TodoList.tsx
+* <button>delete</button> 여기에 걸려있는 onClick 함수가 idp나 memo
+데이터를 매개변수로 받아야됨
+* handleDelte 함수는 서버에 axios 요청으로 삭제 api에 요청 보내야함
