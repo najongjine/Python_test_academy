@@ -32,3 +32,11 @@ React, Svelte 든 이걸 쓰는 가장 큰 이유가
 component 방식을 쓰면 컴포넌트를 갔다 쓰는 화면은 부모가 되고
 import 되는 UI는 자식이 되요
 부모 화면이 변수나 함수를 자식 UI 한테 주면 되요
+
+https://github.com/najongjine/ReactNativeExpo_test1_academy/tree/e39c81d69cf7521c19b2ae9edfee11eef857241d
+- react native 에서 메모 수정하기
+- 모달 compoment 화 시킨후 모달창에 메모 데이터 띄우고 수정하기
+- 버튼 컴포넌트화. 버튼 색상, 글자, 크기, 배치위치, 기능
+
+
+
