@@ -1,0 +1,34 @@
+App을 전문으로 갈거면
+https://www.inflearn.com/course/%EC%A0%9C%EB%A1%9C%EC%B4%88-react-native-expo
+이분 강의 추천해요.
+app 전문가 준비가 혼자 준비하면 3달 정도 걸리겠지만,
+중요한 준비 다 되고 취업하는거 아님,
+그냥 면접 보시는대로 보시면 되고, 만약 누가 우리는 앱 전문가가 필요한데...
+그때 전문으로 공부 할겁니다.
+
+TCP IP
+스프링, 
+nodejs express,
+nodejs Hono,
+nodejs nestjs,
+asp.net  .net core 6
+DB mariadb, postgres
+hosting (Rocky, Centos 8, ubuntu),
+navercloud,
+GPU 호스팅 cuda
+서버 전문 궁금하시면 저한테 물어봐도 되요
+
+게임쪽은 inflearn의 rookis님 추천해요
+NC, Nexon, Crafton 이런곳은 언리얼 엔진, c++, direct x 
+소규모 팀은 유니티
+
+
+
+React, Svelte 든 이걸 쓰는 가장 큰 이유가
+화면바인딩 & 컴포넌트 라는 개념이에요
+컴포넌트는 UI를 미리 디자인까지 싹 잎혀서 만들어 놓고,
+나중에 갔다 쓰는 방식이에요
+
+component 방식을 쓰면 컴포넌트를 갔다 쓰는 화면은 부모가 되고
+import 되는 UI는 자식이 되요
+부모 화면이 변수나 함수를 자식 UI 한테 주면 되요
