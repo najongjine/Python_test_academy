@@ -1,0 +1,9 @@
+https://github.com/najongjine/ReactNative_Hospital/tree/76b937a718d0d43d1340285076c34ea67ba18523
+-카카오 개발자 가입
+-카카오맵 권한 오픈
+-홈화면 전체적 설명
+-병원검색 전체적인 설명
+-카카오 place rest api 설명
+-검색결과 크롬에서 포워딩해서 결과 띄움
+
+https://github.com/najongjine/Hono_hospital/tree/a8f4ec6e2ce86356d4849f661e3ee17215fe5565
