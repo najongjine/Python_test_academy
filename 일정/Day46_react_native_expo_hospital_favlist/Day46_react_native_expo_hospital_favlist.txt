@@ -1,0 +1,4 @@
+https://github.com/najongjine/ReactNative_Hospital/tree/76b937a718d0d43d1340285076c34ea67ba18523
+-DB 에 저장되있는 즐겨찾기 리엑트 네이티브로 가져오기
+- _layout.tsx 탭 제거방식 설명. 단순히 안보이게 하는법 & 완전 제거
+https://github.com/najongjine/Hono_hospital/tree/a8f4ec6e2ce86356d4849f661e3ee17215fe5565
