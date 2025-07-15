@@ -24,3 +24,14 @@ CREATE TABLE "public"."t_product" (
     PRIMARY KEY ("idp")
 );
 
+
+
+유저, 유저권한, 카테고리, 제품 테이블 생성
+
+firebase google login 셋팅
+
+https://github.com/najongjine/sevelte_bungang_academy.git
+- 파이어베이스 구글 로그인 버튼, 팝업
+
+https://github.com/najongjine/Hono_bunjang_vercel_academy
+- skeleton framework. neon-PG DB module
