@@ -1,3 +1,6 @@
+https://github.com/najongjine/Hono_bunjang_vercel_academy/tree/ed4623b19d7c32df7391fdd659181832cd1f06b7
+https://github.com/najongjine/sevelte_bungang_academy/tree/e3ac448f8b6f402f52eff13d0e76b007c7034bdc
+
 - 스벨트에서 파이어베이스 로그인 데이터 수신 확인
 - 서버에 /login api 에 회원가입 안됬으면 가입, 이미 됬으면 그냥 로그인
 - 스벨트에서 서버로 로그인 요청 보내기 코드만 준비
