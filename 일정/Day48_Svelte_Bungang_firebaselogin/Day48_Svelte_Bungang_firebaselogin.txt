@@ -1,26 +1,3 @@
--- Sequence and defined type
-CREATE SEQUENCE IF NOT EXISTS t_category_id_seq;
-
--- Table Definition
-CREATE TABLE "public"."t_category" (
-    "idp" int4 NOT NULL DEFAULT nextval('t_category_id_seq'::regclass),
-    "category_name" varchar(100) DEFAULT ''''''::character varying,
-    PRIMARY KEY ("idp")
-);
-
--- Sequence and defined type
-CREATE SEQUENCE IF NOT EXISTS t_product_id_seq;
-
--- Table Definition
-CREATE TABLE "public"."t_product" (
-    "idp" int4 NOT NULL DEFAULT nextval('t_product_id_seq'::regclass),
-    "title" varchar(1000) DEFAULT ''''''::character varying,
-    "content" text DEFAULT ''''''::text,
-    "price" float4 DEFAULT 0,
-    "category_idp" int4,
-    "created_dt" timestamptz DEFAULT now(),
-    "updated_dt" timestamptz DEFAULT now(),
-    CONSTRAINT "t_product_category_idp_fkey" FOREIGN KEY ("category_idp") REFERENCES "public"."t_category"("idp") ON DELETE CASCADE ON UPDATE CASCADE,
-    PRIMARY KEY ("idp")
-);
-
+- 스벨트에서 파이어베이스 로그인 데이터 수신 확인
+- 서버에 /login api 에 회원가입 안됬으면 가입, 이미 됬으면 그냥 로그인
+- 스벨트에서 서버로 로그인 요청 보내기 코드만 준비
