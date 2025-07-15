@@ -1,0 +1,26 @@
+-- Sequence and defined type
+CREATE SEQUENCE IF NOT EXISTS t_category_id_seq;
+
+-- Table Definition
+CREATE TABLE "public"."t_category" (
+    "idp" int4 NOT NULL DEFAULT nextval('t_category_id_seq'::regclass),
+    "category_name" varchar(100) DEFAULT ''''''::character varying,
+    PRIMARY KEY ("idp")
+);
+
+-- Sequence and defined type
+CREATE SEQUENCE IF NOT EXISTS t_product_id_seq;
+
+-- Table Definition
+CREATE TABLE "public"."t_product" (
+    "idp" int4 NOT NULL DEFAULT nextval('t_product_id_seq'::regclass),
+    "title" varchar(1000) DEFAULT ''''''::character varying,
+    "content" text DEFAULT ''''''::text,
+    "price" float4 DEFAULT 0,
+    "category_idp" int4,
+    "created_dt" timestamptz DEFAULT now(),
+    "updated_dt" timestamptz DEFAULT now(),
+    CONSTRAINT "t_product_category_idp_fkey" FOREIGN KEY ("category_idp") REFERENCES "public"."t_category"("idp") ON DELETE CASCADE ON UPDATE CASCADE,
+    PRIMARY KEY ("idp")
+);
+
