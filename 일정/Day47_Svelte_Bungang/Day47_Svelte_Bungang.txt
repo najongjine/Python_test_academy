@@ -1,4 +1,26 @@
 -- Sequence and defined type
+CREATE SEQUENCE IF NOT EXISTS untitled_table_213_id_seq;
+
+-- Table Definition
+CREATE TABLE "public"."t_user" (
+    "idp" int4 NOT NULL DEFAULT nextval('untitled_table_213_id_seq'::regclass),
+    "uid" varchar(500) DEFAULT ''''''::character varying,
+    "email" varchar(150) DEFAULT ''''''::character varying,
+    "displayname" varchar(150) DEFAULT ''''''::character varying,
+    "photourl" varchar(300) DEFAULT ''''''::character varying,
+    "providerid" varchar(100) DEFAULT ''''''::character varying,
+    "created_dt" timestamptz DEFAULT now(),
+    "updated_dt" timestamptz DEFAULT now(),
+    "idtoken" varchar(600) DEFAULT ''''''::character varying,
+    PRIMARY KEY ("idp")
+);
+
+-- Indices
+CREATE UNIQUE INDEX untitled_table_213_pkey ON public.t_user USING btree (idp);
+
+
+
+-- Sequence and defined type
 CREATE SEQUENCE IF NOT EXISTS t_category_id_seq;
 
 -- Table Definition
