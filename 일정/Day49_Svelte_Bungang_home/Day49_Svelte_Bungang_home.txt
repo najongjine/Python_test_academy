@@ -1,0 +1,6 @@
+https://github.com/najongjine/Hono_bunjang_vercel_academy/tree/5bd13fd844a85941d30b400d1fdb8ca5a320fdcf
+https://github.com/najongjine/sevelte_bungang_academy/tree/d2e53aece0f853297850e6d83b91e0b1a8b774a1
+
+- 파이어베이스 로그인 -> 서버 -> 스벨트 기능완성
+- 번개장터 비슷한 홈페이지 svelte로 표현
+- 헤더, 배너, list 컴포넌트화
