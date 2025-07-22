@@ -1,0 +1,6 @@
+https://github.com/najongjine/sevelte_bungang_academy/tree/162636a29deb917d9fe1808bf3e38e5fee1ba72d
+- 상품 upsert 이후 홈 화면으로 이동
+- 상품 upsert 하는 화면에서 category list select 가능하게 하기
+
+https://github.com/najongjine/Hono_bunjang_vercel_academy/tree/ee1d6d511b0f46f0784650ee8fe60ee6b2101e9e
+- category list API 구축
