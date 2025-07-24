@@ -1,1 +1,5 @@
+https://github.com/najongjine/sevelte_bungang_academy/tree/85f48b6a6f94470140be8cab120563f67c457c89
+https://github.com/najongjine/Hono_bunjang_vercel_academy/tree/46e59f3c81f685e579c6da4870c6be1c5c4d2823
 상품 상세페이지
+서버쪽 홈화면 검색시능을 위한 동적쿼리 작업
+홈 화면 아이템 카드 크기 줄임
