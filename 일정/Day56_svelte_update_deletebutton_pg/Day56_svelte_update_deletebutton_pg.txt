@@ -1,0 +1,5 @@
+상품 상세페이지 에서
+수정, 삭제버튼 추가.
+tailwind css 가 버그있어서 순수 css 로 버튼 컴포넌트화
+flex 로 css 잡음
+tosspayment PG 사 연동
