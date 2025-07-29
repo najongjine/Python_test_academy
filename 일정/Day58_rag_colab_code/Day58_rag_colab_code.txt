@@ -1,3 +1,5 @@
+https://colab.research.google.com/drive/1W8X4v13SVdJC9SUiKVirjxlWXbTSHwWY?usp=sharing
+
 !pip install langchain transformers sentence-transformers faiss-cpu
 !pip install -U langchain langchain-community
 
