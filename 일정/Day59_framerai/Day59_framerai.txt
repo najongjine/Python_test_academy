@@ -11,3 +11,9 @@ https://www.codeit.kr/paths/ui-design-basics?utm_source=google&utm_medium=paid_s
 
 퍼블리셔 같은 경우는 GPT 붙잡고 css 연습 하셔야되요.
 고급 css 기능은 여전히 자바스크립트로 해야합니다
+
+
+
+https://colab.research.google.com/drive/1weSNcQkNJL915ObhH1_bj14RPB4mhBLU?usp=sharing
+- yolo 파인튜닝 하는 코드
+- yolo는 옛날 개 고양이 수준을 뛰어넘어, cctv 분석에도 쓰이는 모델이에요
